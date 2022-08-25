@@ -46,7 +46,7 @@ async function main() {
   if (contractBalance !== '0.0') {
     console.log('withdraw funds..')
     const withdrawTxn = await buyMeACoffee.withdrawTips() // Pulling money out from  our contract balance and send it over to the owner's wallet
-    await withdrawTxn.await()
+    console.log(withdrawTxn)
   } else {
     console.log('Yooh , No funds to withdraw!')
   }
